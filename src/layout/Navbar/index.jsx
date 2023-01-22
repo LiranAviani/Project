@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom";
-
-export default function Navbar() {
+import {  NavLink } from "react-router-dom";
+import { Form, Button } from "react-bootstrap";
+export default function Navbar({setSearch}) {
   function getClassNameByActive({ isActive }) {
     return isActive ? "active" : "";
   }
@@ -21,6 +21,16 @@ export default function Navbar() {
         Register
       </NavLink>
       <button>logout</button>
+      <Form className="d-flex">
+        <Form.Control
+          onChange={(e) => setSearch(e.target.value)}
+          type="search"
+          placeholder="Search"
+          className="me-2"
+          aria-label="Search"
+        />
+        <Button>Search</Button>
+      </Form>
     </header>
   );
 }
