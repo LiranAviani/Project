@@ -1,9 +1,8 @@
 import React from 'react'
-import { Navigate, useNavigate, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function Courses({course = {}}) {
     const { id,name,category,about,dateStart,capacity,status} = course
-    const nav = useNavigate()   
   return (
     <Link to={{pathname:`/course/${id}`}} state={{course:course}} >
       <li className="course-card">

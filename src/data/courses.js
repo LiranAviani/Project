@@ -1,4 +1,4 @@
-const courses = [
+export const courses = [
     {
         id:1,
         name:"Java",
@@ -25,5 +25,3 @@ const courses = [
         status: "open"
     }
 ]
-
-export default module = courses;

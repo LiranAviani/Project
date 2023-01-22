@@ -1,4 +1,4 @@
-const users = [
+export const users = [
     {
         id:1,
         username:"liran",
@@ -22,5 +22,3 @@ const users = [
             email: "liran@gmail.com"
     }
 ]
-
-export default module = users

@@ -4,12 +4,12 @@ import Courses from './pages/course/index';
 import Course from './pages/course/SingleCourse';
 import Navbar from './layout/Navbar';
 import Home from './pages/home/index'
-import courses from './data/courses'
-import users from './data/users';
-import { createContext, useState } from 'react';
+import {courses} from './data/courses'
+import {users} from './data/users';
 
 
 function App() {
+  console.log(users)
   return (
     <div className='App'>
       <Navbar />
