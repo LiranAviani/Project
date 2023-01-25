@@ -3,7 +3,7 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Courses from './pages/course/index';
-import Course from './pages/course/SingleCourse';
+import SingleCourse from './pages/course/SingleCourse';
 import Navbar from './layout/Navbar';
 import Home from './pages/home/index'
 import { courses } from './data/courses'
@@ -19,7 +19,7 @@ function App() {
         <Route index element={<Home/>} />
         <Route path='/course'>
           <Route index element={<Courses search={search} courses={courses} />} />
-          <Route path=':id' element={<Course />} />
+          <Route path=':id' element={<SingleCourse />} />
         </Route>
       </Routes>
 

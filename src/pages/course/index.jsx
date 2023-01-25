@@ -1,5 +1,5 @@
 import React from 'react'
-import Course from './CourseCard'
+import Card from './CourseCard'
 
 export default function Courses({courses, search}) {
   return (
@@ -7,7 +7,7 @@ export default function Courses({courses, search}) {
         <ul className='list-courses'>
           {courses.filter((item) =>{
             return search.toLowerCase() === '' ? item : item.name.toLowerCase().includes(search) || item.category.toLowerCase().includes(search) || item.dateStart.toLowerCase().includes(search)
-          }).map(c => <Course key={c.id} course={c} />)}
+          }).map(c => <Card key={c.id} course={c} />)}
         </ul>
       </div>
   )

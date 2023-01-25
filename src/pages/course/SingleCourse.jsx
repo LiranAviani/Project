@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
 
-export default function Course() {
+export default function SingleCourse() {
   const location = useLocation()
   const {course} = location.state
   

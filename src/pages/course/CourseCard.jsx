@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Courses({course = {}}) {
+export default function Card({course = {}}) {
     const { id,name,category,about,dateStart,capacity,status} = course
   return (
     <Link to={{pathname:`/course/${id}`}} state={{course:course}} >
