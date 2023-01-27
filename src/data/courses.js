@@ -5,11 +5,11 @@ export const courses = [
         category:"Programer",
         subCategory:"App",
         about:"blabla",
-        dateStart:"1/3/2023",
-        dateEnd:"1/4/2023",
+        dateStart: new Date(2023,1,6),
+        dateEnd: new Date(2023,12,10),
         capacity:6,
         members:[],
-        status:"open"
+        status:"open",users:[]
     }
     ,
     {
@@ -18,8 +18,8 @@ export const courses = [
         category: "Programer",
         subCategory: "Fullstack",
         about: "blabla",
-        dateStart: "1/3/2023",
-        dateEnd: "1/4/2023",
+        dateStart: new Date(2023,3,1),
+        dateEnd: new Date(2023,4,1),
         capacity: 6,
         members: [],
         status: "open"

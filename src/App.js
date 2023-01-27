@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route index element={<Home/>} />
         <Route path='/course'>
-          <Route index element={<Courses search={search} courses={courses} />} />
+          <Route index element={<Courses search={search.toLowerCase()} courses={courses} />} />
           <Route path=':id' element={<SingleCourse />} />
         </Route>
       </Routes>

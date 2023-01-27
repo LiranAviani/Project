@@ -8,17 +8,19 @@ export const users = [
         age:26,
         adress:"hadugit",
         about:"blabla",
-        email:"liran@gmail.com"
+        email:"liran@gmail.com",
+        myCourse : []
     },
     {
         id: 2,
-            username: "liran",
-            password: 123,
-            firstName: "liran",
-            lastName: "Aviani",
-            age: 26,
-            adress: "hadugit",
-            about: "blabla",
-            email: "liran@gmail.com"
+        username: "liran",
+        password: 123,
+        firstName: "liran",
+        lastName: "Aviani",
+        age: 26,
+        adress: "hadugit",
+        about: "blabla",
+        email: "liran@gmail.com",
+        myCourse: []
     }
 ]
