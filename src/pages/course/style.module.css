@@ -92,6 +92,7 @@ body{
     display: inline-block;
     background: #fff;
     margin: 20px;
+    cursor: pointer;
 }
 
 .container a:before,

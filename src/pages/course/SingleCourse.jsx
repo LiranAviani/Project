@@ -12,6 +12,9 @@ export default function SingleCourse() {
   const monthEnd = course.dateEnd.getMonth() === 0 ? 12 : course.dateEnd.getMonth();
   const yearStart = course.dateStart.getFullYear();
   const yearEnd = course.dateEnd.getFullYear();  
+  function register(){
+    console.log("register")
+  }
   return (
     <div className="courses-page">
       <div className={style.box}>
@@ -27,7 +30,7 @@ export default function SingleCourse() {
           <p>Members: {course.members.length}</p>
           <p>Status: {course.status}</p>
           <div className={style.container}>
-            <a href='#'>
+            <a onClick={register}>
               <span>register</span>
             </a>
           </div>
