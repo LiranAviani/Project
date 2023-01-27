@@ -9,7 +9,8 @@ export const courses = [
         dateEnd: new Date(2023,12,10),
         capacity:6,
         members:[],
-        status:"open",users:[]
+        status:"open",
+        users:[]
     }
     ,
     {
@@ -22,6 +23,7 @@ export const courses = [
         dateEnd: new Date(2023,4,1),
         capacity: 6,
         members: [],
-        status: "open"
+        status: "open", 
+        users: []
     }
 ]
