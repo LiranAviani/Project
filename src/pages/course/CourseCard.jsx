@@ -12,7 +12,7 @@ export default function Card({course = {}}) {
       <div className={style.box}>
         <div className={style.glass}></div>
         <div className={style.content}>
-          <h3>Course name: {name}</h3>
+          <h3>{name}</h3>
           <p>Category: {category}</p>
           <p>About: {about}</p>
           <p>Start date: {day + "/" + month + "/" + year}</p>

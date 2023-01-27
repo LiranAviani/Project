@@ -9,6 +9,10 @@ body{
     background: #010615;
 }
 
+h3{
+    text-decoration: underline;
+}
+
 .box {
     position: relative;
     width: 300px;
@@ -72,8 +76,9 @@ body{
 }
 
 .box .content{
-    padding: 20px;
+    padding: 30px;
     color: #fff;
+    text-align: center;
 }
 
 

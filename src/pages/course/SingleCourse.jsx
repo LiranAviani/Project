@@ -20,7 +20,7 @@ export default function SingleCourse() {
       <div className={style.box}>
         <div className={style.glass}></div>
         <div className={style.content}>
-          <h3>Course name: {course.name}</h3>
+          <h3>{course.name}</h3>
           <p>Category: {course.category}</p>
           <p>Sub-Category: {course.subCategory}</p>
           <p>About: {course.about}</p>
