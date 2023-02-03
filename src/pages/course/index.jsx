@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import DataContext from "../../context/DataContext";
 import Card from "./CourseCard";
 
 const getDate = (date) => {
   let sp = date.split("-");
   return new Date(sp[0], sp[1], sp[2]);
 };
-export default function Courses({ courses, search, date }) {
+export default function Courses({  search, date }) {
+  const {coursesA} = useContext(DataContext)
   return (
     <div className="courses-page">
       <ul className="list-courses">
-        {courses
+        {coursesA
           .filter((item) => (date ? item.dateStart >= getDate(date) : true))
           .filter((item) => {
             return search.toLowerCase() === ""

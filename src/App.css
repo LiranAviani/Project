@@ -1,6 +1,21 @@
 *{
   color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
+
+body{
+  background: #010615;
+  height: 100%;
+}
+
+h3{
+  text-decoration: underline;
+}
+
 
 /* Navbar */
 
