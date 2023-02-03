@@ -10,7 +10,6 @@ export const courses = [
         capacity:6,
         members:[],
         status:"open",
-        users:[]
     }
     ,
     {
@@ -24,6 +23,5 @@ export const courses = [
         capacity: 6,
         members: [],
         status: "open", 
-        users: []
     }
 ]

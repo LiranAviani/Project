@@ -90,7 +90,7 @@ h3{
     align-items: center;
 }
 
-.container a{
+.container button{
     position: relative;
     width: 160px;
     height: 60px;
@@ -100,8 +100,8 @@ h3{
     cursor: pointer;
 }
 
-.container a:before,
-.container a:after{
+.container button:before,
+.container button:after{
     content: '';
     position: absolute;
     inset: 0;
@@ -109,16 +109,16 @@ h3{
     transition: 0.5s;
 }
 
-.container a:hover:before{
+.container button:hover:before{
     inset: -3px;
 }
 
-.container a:hover:after{
+.container button:hover:after{
     inset: -3px;
     filter: blur(10px);
 }
 
-.container a span{
+.container button span{
     position: absolute;
     top: 0;
     left: 0;

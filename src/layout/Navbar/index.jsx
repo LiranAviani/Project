@@ -1,6 +1,8 @@
 import {  NavLink } from "react-router-dom";
-import { Form, Button } from "react-bootstrap";
-export default function Navbar({setSearch}) {
+import { Form } from "react-bootstrap";
+
+
+export default function Navbar({setSearch , setDate}) {
   function getClassNameByActive({ isActive }) {
     return isActive ? "active" : "";
   }
@@ -29,7 +31,7 @@ export default function Navbar({setSearch}) {
           className="me-2"
           aria-label="Search"
         />
-        <Button>Search</Button>
+        <Form.Control onChange={(e) => setDate(e.target.value)} type="date" name="startDate" />
       </Form>
     </header>
   );

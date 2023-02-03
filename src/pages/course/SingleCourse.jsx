@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useLocation } from 'react-router-dom'
+import DataContext from '../../context/DataContext';
 import style from "./style.module.css";
 
 
@@ -12,8 +13,13 @@ export default function SingleCourse() {
   const monthEnd = course.dateEnd.getMonth() === 0 ? 12 : course.dateEnd.getMonth();
   const yearStart = course.dateStart.getFullYear();
   const yearEnd = course.dateEnd.getFullYear();  
+  const {user} = useContext(DataContext)
   function register(){
-    console.log("register")
+    course.members.push(user.id);
+    user.myCourse.push(course.id)
+    console.log(user)
+    console.log(course)
+
   }
   return (
     <div className="courses-page">
@@ -30,9 +36,9 @@ export default function SingleCourse() {
           <p>Members: {course.members.length}</p>
           <p>Status: {course.status}</p>
           <div className={style.container}>
-            <a onClick={register}>
+            <button onClick={register}>
               <span>register</span>
-            </a>
+            </button>
           </div>
         </div>
       </div>
