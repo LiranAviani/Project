@@ -34,7 +34,7 @@ h3{
 
 .navbar .active {
   transform: scale(1.2);
-  text-decoration: underline;
+  color: #ed3c57;
 }
 
 a{
