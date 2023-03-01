@@ -8,10 +8,11 @@ export default function MyCourses() {
   return (
     <div className="courses-page">
       <ul className="list-courses">
-        {coursesA.filter(c => c.id === user.id)
+        {user.myCourse.length > 0 ? (coursesA.filter(c => user.myCourse.includes(c.id))
           .map((c) => (
             <Card key={c.id} course={c} />
-          ))}
+          ))) : (<div>you dont have courses yet go and find course and register</div>)}
+        
       </ul>
     </div>
   )
