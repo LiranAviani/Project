@@ -18,7 +18,7 @@ function App() {
   const [user, setUser] = useState(users[0])
   return (
     <div className="App">
-      <DataContext.Provider value={{ user, setUser, coursesA,setCoursesA}}>
+      <DataContext.Provider value={{ user, setUser, coursesA,setCoursesA }}>
         <Navbar setSearch={setSearch} setDate={setDate} />
         <Routes>
           <Route index element={<Home />} />
@@ -29,6 +29,8 @@ function App() {
                 <Courses
                   search={search.toLowerCase()}
                   date={date}
+                  setSearch={setSearch}
+                  setDate={setDate}
                 />
               }
             />
