@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { Form } from "react-bootstrap";
 
 export default function Navbar() {
   function getClassNameByActive({ isActive }) {
@@ -10,6 +9,9 @@ export default function Navbar() {
     <header className="navbar">
       <NavLink className={getClassNameByActive} to="/">
         Home
+      </NavLink>
+      <NavLink className={getClassNameByActive} to="/about">
+        About
       </NavLink>
       <NavLink className={getClassNameByActive} to="/course">
         Course

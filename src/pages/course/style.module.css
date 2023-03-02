@@ -121,3 +121,8 @@
     letter-spacing: 2px;
     color: #fff;
 }
+
+.form_width{
+    width: 40%;
+    text-align: center;
+}

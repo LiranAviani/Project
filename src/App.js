@@ -7,6 +7,7 @@ import SingleCourse from "./pages/course/SingleCourse";
 import MyCourses from "./pages/course/MyCourses"
 import Navbar from "./layout/Navbar";
 import Home from "./pages/home/index";
+import About from "./pages/home/about";
 import { courses } from "./data/courses";
 import { users } from "./data/users";
 import DataContext from "./context/DataContext";
@@ -22,6 +23,7 @@ function App() {
         <Navbar setSearch={setSearch} setDate={setDate} />
         <Routes>
           <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/course">
             <Route
               index
