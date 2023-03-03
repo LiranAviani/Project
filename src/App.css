@@ -9,6 +9,7 @@
 
 body{
   background: #010615;
+  margin-left: 20px;
   height: 100%;
 }
 
@@ -66,3 +67,12 @@ a{
   list-style: none;
 }
 
+.filter{
+  width: 20%;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.d-flex{
+  justify-content:center;
+}

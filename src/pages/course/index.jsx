@@ -12,22 +12,21 @@ export default function Courses({ search, date, setSearch, setDate }) {
   const { coursesA } = useContext(DataContext);
   return (
     <div>
-      <div className={style.form_width}>
         <Form className="d-flex">
           <Form.Control
             onChange={(e) => setSearch(e.target.value)}
             type="search"
             placeholder="Search"
-            className="me-2"
+            className="filter"
             aria-label="Search"
           />
           <Form.Control
             onChange={(e) => setDate(e.target.value)}
             type="date"
             name="startDate"
+            className="filter"
           />
         </Form>
-      </div>
       <div className="courses-page">
         <ul className="list-courses">
           {coursesA

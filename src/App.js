@@ -6,7 +6,7 @@ import Courses from "./pages/course/index";
 import SingleCourse from "./pages/course/SingleCourse";
 import MyCourses from "./pages/course/MyCourses"
 import Navbar from "./layout/Navbar";
-import Home from "./pages/home/index";
+import Home from "./pages/home/home";
 import About from "./pages/home/about";
 import { courses } from "./data/courses";
 import { users } from "./data/users";
