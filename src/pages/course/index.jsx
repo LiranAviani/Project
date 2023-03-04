@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import DataContext from "../../context/DataContext";
 import Card from "./CourseCard";
-import style from './style.module.css'
 import { Form } from "react-bootstrap";
 
 const getDate = (date) => {
